@@ -1,37 +1,13 @@
-<!-- php タグの前に書く方法 -->
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-<?php
-
-// echo で出力する方法
-echo '<meta charset="UTF-8">';
-
-// 文字列リテラルとして書く方法（このままでは出力されません）
-$title = 'php で HTML を書く方法';
-
-// 文字列操作でつなげることも出来ます
-echo "<title>{$title}</title>";
-
-// 一時的に php タグから脱出する方法
-?>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progate</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-<?php
-
-// ヒアドキュメント で HTML を書く方法
-$body = <<<HTML
-Hello
-World!
-<script>
-console.log('不正な処理');
-</script>
-HTML;
-
-// 文字列を関数で加工して表示する方法
-echo nl2br(htmlspecialchars($body));
-
-// php タグの後に書く方法
-?>
+<h1>Hello world!</h1>
 </body>
 </html>
